@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+}
+.topo {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Fixar a barra na rolagem */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.logo {
+  height: 40px;
+  width: 10%;
+}
+.logo img {
+  width: 160px;
+  height: 40px;
+  padding: 5px;
+  margin-left: 40px;
+}
+.busca {
+  height: 15px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.opcoes {
+  height: 8px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.thumbnail {
+  position: relative;
+}
+
+.tempo-video {
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 35px;
+  bottom: 10px;
+  right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.recomendados-titulo {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+img {
+  height: 200px;
+}
+.conteudo {
+  display: flex;
+  margin-top: 60px;
+}
+.menu-lateral {
+  background-color: white;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagem-menu {
+  width: 30px;
+  height: 30px;
+}
+.botao-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.botao-menu img {
+  height: 40px;
+}
+.botao-menu:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+/* media queris */
+@media (max-width: 600px) {
+  /*Sumir com a barra lateral*/
+  .menu-lateral {
+    display: none;
+  }
+  display: none;
+}
+
+.videos {
+  justify-content: center;
+}
+
+i {
+  font-size: 40px;
+}
